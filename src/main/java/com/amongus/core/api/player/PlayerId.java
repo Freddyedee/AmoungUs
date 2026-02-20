@@ -1,4 +1,4 @@
-package com.amongus.core.model;
+package com.amongus.core.api.player;
 import java.util.UUID;
 
 public record PlayerId(UUID value){
