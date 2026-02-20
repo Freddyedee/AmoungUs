@@ -16,6 +16,7 @@ public final class PlayerView {
     }
 
     public PlayerId getId() {
+        //hola
         return id;
     }
 
