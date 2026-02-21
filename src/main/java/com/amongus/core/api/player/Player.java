@@ -1,12 +1,15 @@
 package com.amongus.core.api.player;
 
-import java.util.UUID;
-
 public interface Player {
 
-    UUID getId();
+    PlayerId getId();
     String getName();
     Role getRole();
+
     boolean alive();
     boolean connected();
+
+    // Mutaciones controladas del estado
+    void kill();
+    void disconnect();
 }

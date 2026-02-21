@@ -1,8 +1,5 @@
 package com.amongus.core.api.events;
 
-public final class GameEndedEvent implements GameEvent {
+public record GameEndedEvent(String reason) implements GameEvent { //puede ser un enum la razón.
 
-    public GameEndedEvent(){
-
-    }
 }

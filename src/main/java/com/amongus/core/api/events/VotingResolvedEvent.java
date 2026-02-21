@@ -1,8 +1,7 @@
 package com.amongus.core.api.events;
 
-public final class VotingResolvedEvent implements GameEvent {
+import com.amongus.core.api.player.PlayerId;
 
-    public VotingResolvedEvent(){
-
-    }
+public record VotingResolvedEvent(PlayerId ejectedPlayer)
+        implements GameEvent {
 }

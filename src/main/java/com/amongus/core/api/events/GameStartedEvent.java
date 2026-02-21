@@ -1,8 +1,7 @@
 package com.amongus.core.api.events;
 
-public final class GameStartedEvent implements GameEvent {
+import java.util.UUID;
 
-    public GameStartedEvent(){
+public record GameStartedEvent(UUID sessionId) implements GameEvent {
 
-    }
 }
