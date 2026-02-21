@@ -15,6 +15,10 @@ public abstract class Player{
         isAlive=true;//Jugador vivo
     }
 
+    public PlayerId getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }
@@ -43,11 +47,11 @@ public abstract class Player{
         isAlive = alive;
     }
 
+    public abstract String getRol();
+
     public void move(int deltaX, int deltaY){
         //El jugador se esta moviendo
         this.position=new Position(this.position.x()+deltaX,this.position.y()+deltaY);
     }
-
-    public abstract String getRol();
 
 }
