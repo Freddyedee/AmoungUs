@@ -1,5 +1,5 @@
 package com.amongus.core.view;
-import com.amongus.core.model.PlayerId;
+import com.amongus.core.api.player.PlayerId;
 import com.amongus.core.model.Position;
 import java.util.Objects;
 
@@ -16,6 +16,7 @@ public final class PlayerView {
     }
 
     public PlayerId getId() {
+        //hola
         return id;
     }
 
